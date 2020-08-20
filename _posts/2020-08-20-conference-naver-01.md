@@ -8,9 +8,8 @@ comments: true
 share: true
 tags:
   - conference
-  - SEF2020
-  - jcoding
-date: 2020-07-04T09:08:00-0:10:00
+  - NAVER TECH CONCERT
+date: 2020-08-20T13:08:00-0:10:00
 ---
 
 # "빠르게 성장하는 슈퍼루키로 거듭나기"위해 필요한 세가지
