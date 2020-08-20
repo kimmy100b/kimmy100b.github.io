@@ -1,15 +1,15 @@
 ---
 layout: post
-title: '[프로그래머스] 있었는데요 없었습니다'
+title: "[프로그래머스] 있었는데요 없었습니다"
 categories:
-    - query
-excerpt: ' '
+  - algorithm
+excerpt: " "
 comments: true
 share: true
 tags:
-    - MySQL
-    - Oracle
-    - programmers
+  - MySQL
+  - Oracle
+  - programmers
 date: 2020-08-07 T17:34:00-0:05:00
 ---
 
@@ -42,6 +42,7 @@ SQL문을 실행하면 다음과 같이 나와야 합니다.
 ![](https://kimmy100b.github.io/assets/images/programmers/59043/5.PNG){: .align-center}
 
 # MySQL
+
 ```
 SELECT i.ANIMAL_ID, i.NAME
 FROM ANIMAL_INS AS i JOIN ANIMAL_OUTS AS o ON i.ANIMAL_ID = o.ANIMAL_ID
@@ -54,6 +55,7 @@ ORDER BY i.DATETIME;
 AS를 사용해서 별칭을 정할 수 없다!! (오류뜸)
 AS 제외하고 사용하니 됨!
 INNER JOIN을 JOIN으로 적어도 됨
+
 ```
 SELECT ins.ANIMAL_ID, ins.NAME
 FROM ANIMAL_INS ins INNER JOIN ANIMAL_OUTS outs ON (ins.ANIMAL_ID = outs.ANIMAL_ID)
@@ -62,4 +64,5 @@ ORDER BY ins.DATETIME;
 ```
 
 # 링크
+
 <https://programmers.co.kr/learn/courses/30/lessons/59043>
