@@ -16,6 +16,7 @@ date: 2020-08-20T16:34:00-0:30:00
 
 클래스명으로 인해 fail당했다..
 ![](https://kimmy100b.github.io/assets/images/codereview/aboutme/FE/fail1.PNG){: .align-center}
+<br>
 
 # <html>태그의 lang속성의 값을 지정해주기
 
@@ -26,6 +27,7 @@ lang속성으로 지정한 값은 스크린 리더의 기본 문자셋으로 지
 ```
 
 ![](https://kimmy100b.github.io/assets/images/codereview/aboutme/FE/1.PNG){: .align-center}
+<br>
 
 # classname은 통일해주기
 
@@ -34,6 +36,7 @@ lang속성으로 지정한 값은 스크린 리더의 기본 문자셋으로 지
 
 ![](https://kimmy100b.github.io/assets/images/codereview/aboutme/FE/2.PNG){: .align-center}
 ![](https://kimmy100b.github.io/assets/images/codereview/aboutme/FE/3.PNG){: .align-center}
+<br>
 
 # <br> 태그는 단일 태그이다
 
