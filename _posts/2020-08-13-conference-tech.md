@@ -12,7 +12,7 @@ tags:
 date: 2020-08-13T16:08:00-0:10:00
 ---
 
-![](https://kimmy100b.github.io/assets/images/conference/2019_07_tech/email.png){: .align-center}<br/>
+![](https://kimmy100b.github.io/assets/images/conference/2020_07_tech/email.png){: .align-center}<br/>
 
 # 2020년에 FE개발자가 되기 위한 10가지 방법 by 코드스쿼드 윤지수
 
