@@ -21,10 +21,9 @@ date: 2020-08-21 T17:42:00-0:05:00
 - 필요한 로직만을 로드해서 메모리의 낭비를 줄일 수 있다.
   <br><br>
   다른 php파일을 코드 안으로 불러오는 방법에 대해 알아보자
+  <br>
 
-  <br><br>
-
-# include
+# include 설명
 
 ```php
 <?php
@@ -35,7 +34,7 @@ echo welcome();
 ?>
 ```
 
-위 코드는 문제가 없다. 만약, welcome이라는 함수를 자주 사용한다면 필요할 때마다 이 함수를 정의해서 사용하는 것은 유지보수도 어렵고 낭비가 될 것이다.<br><br>
+위 코드는 문제가 없다. 만약, welcome이라는 함수를 자주 사용한다면 필요할 때마다 이 함수를 정의해서 사용하는 것은 유지보수도 어렵고 낭비가 될 것이다.<br>
 
 그래서 include를 사용하는 것이다.
 
@@ -54,7 +53,7 @@ echo welcome();
 ?>
 ```
 
-<br><br>
+<br>
 
 # 외부의 PHP 파일을 로드하는 방법 4가지
 
@@ -63,9 +62,7 @@ echo welcome();
 - require
 - require_once
 
-  <br><br>
-
-include와 require의 차이점은 존재하지 않는 파일의 로드를 시도했을 때 include가 warning을 일으킨다면 require는 fatal error를 일으킨다는 점이다.<br>
+<br>include와 require의 차이점은 존재하지 않는 파일의 로드를 시도했을 때 include가 warning을 일으킨다면 require는 fatal error를 일으킨다는 점이다.<br>
 (fatal error는 warning보다 심각한 에러이기 때문에 require가 include보다 엄격한 로드방법이다.)<br>
 \_once가 붙은 것은 파일을 로드 할 때 단 한번만 로드하면 된다는 의미이다.<br>
 
