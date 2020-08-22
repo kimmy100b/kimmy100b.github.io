@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "aboutme 코드리뷰 - FE(프론트엔드)"
+title: "aboutme 코드리뷰 1탄 - FE(프론트엔드)"
 categories:
     - codereview
 excerpt: " "
