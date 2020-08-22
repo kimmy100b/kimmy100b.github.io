@@ -2,13 +2,13 @@
 layout: post
 title: "NAVER TECH CONCERT(2020.08.20)"
 categories:
-  - conference
+    - conference
 excerpt: " "
 comments: true
 share: true
 tags:
-  - conference
-  - NAVER TECH CONCERT
+    - conference
+    - NAVER TECH CONCERT
 date: 2020-08-20T13:08:00-0:10:00
 ---
 
@@ -26,6 +26,6 @@ date: 2020-08-20T13:08:00-0:10:00
 
 <!-- TODO : 내용 정리 후 링크 연결하기 -->
 
-- 빠르게 성장하는 슈퍼루키로 거듭나기
-- 상반기 네이버 인턴을 돌아보며
-- Code Review is Horse(코드리뷰는 말이야)(feat.Latte)
+-   [빠르게 성장하는 슈퍼루키로 거듭나기](https://kimmy100b.github.io/conference/2020/08/21/conference-naver01/#)
+-   상반기 네이버 인턴을 돌아보며
+-   Code Review is Horse(코드리뷰는 말이야)(feat.Latte)
