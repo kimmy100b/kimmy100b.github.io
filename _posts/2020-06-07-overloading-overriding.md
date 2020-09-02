@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '오버로딩 vs 오버라이딩'
+title: "오버로딩 vs 오버라이딩"
 categories:
-    - knowledge
-excerpt: ' '
+    - Tech
+excerpt: " "
 comments: true
 share: true
 tags:

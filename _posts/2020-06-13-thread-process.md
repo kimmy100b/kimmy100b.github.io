@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '프로세스 vs 스레드'
+title: "프로세스 vs 스레드"
 categories:
-    - knowledge
-excerpt: ' '
+    - Tech
+excerpt: " "
 comments: true
 share: true
 tags:
@@ -26,8 +26,8 @@ date: 2020-06-13 T00:01:00-0:05:00
 
 -   프로그램이 실행되어서 돌어가고 있는 상태
 -   컴퓨터가 어떤 일을 하고 있는 상태
-    ![](https://kimmy100b.github.io/assets/images/knowledge/process0.jpg){: .align-center}<br/>
-    ![](https://kimmy100b.github.io/assets/images/knowledge/process1.jpg){: .align-center}<br/>
+    ![](https://kimmy100b.github.io/assets/images/tech/process0.jpg){: .align-center}<br/>
+    ![](https://kimmy100b.github.io/assets/images/tech/process1.jpg){: .align-center}<br/>
 
 ## 특징
 
@@ -41,7 +41,7 @@ date: 2020-06-13 T00:01:00-0:05:00
 -   한 프로세스 내에서 실행되는 흐름의 단위
 -   프로세스가 할당받은 자원을 이용하는 실행의 단위
 -   한 프로세서도 여러 갈래의 작업들이 동시에 진행될 필요가 있다.
-    ![](https://kimmy100b.github.io/assets/images/knowledge/thread.jpg){: .align-center}<br/>
+    ![](https://kimmy100b.github.io/assets/images/tech/thread.jpg){: .align-center}<br/>
 
 ## 특징
 

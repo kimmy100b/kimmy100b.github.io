@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '동기와 비동기는 무엇인가요?'
+title: "동기와 비동기는 무엇인가요?"
 categories:
-    - knowledge
-excerpt: ' '
+    - Twech
+excerpt: " "
 comments: true
 share: true
 tags:
