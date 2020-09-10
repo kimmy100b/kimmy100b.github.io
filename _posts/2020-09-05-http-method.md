@@ -9,7 +9,7 @@ share: true
 tags:
     - HTTP
     - HTTP METHOD
-date: 2020-09-10 T00:11:54-0:05:00
+date: 2020-09-05 T00:11:54-0:05:00
 ---
 
 -   POST, GET, PUT, DELETE 이 4가지 메소드를 가지고 CRUD를 할 수 있다.
