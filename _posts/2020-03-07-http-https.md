@@ -2,7 +2,7 @@
 layout: post
 title: 'HTTP와 HTTPS의 차이는 무엇일까?'
 categories:
-    - HTTP&HTTPS
+    - Tech
 excerpt: ' '
 comments: true
 share: true
