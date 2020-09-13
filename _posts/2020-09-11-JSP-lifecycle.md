@@ -2,7 +2,7 @@
 layout: post
 title: "JSP 라이프 싸이클"
 categories:
-  - JSP
+  - JSP Servlet
 excerpt: " "
 comments: true
 share: true

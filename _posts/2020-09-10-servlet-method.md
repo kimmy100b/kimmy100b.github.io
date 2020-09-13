@@ -2,7 +2,7 @@
 layout: post
 title: "Servlet 작성방법"
 categories:
-  - Servlet
+  - JSP Servlet
 excerpt: " "
 comments: true
 share: true
