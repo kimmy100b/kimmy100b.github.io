@@ -54,6 +54,7 @@ date: 2020-09-15 T14:48:54-0:05:00
     - 클라이언트가 요청을 보내고 서버 쪽에서 그 요청에 대해서 혼자 처리했는지, 다른 누군가한테 부탁해서 처리했는지는 몰라도 됨
 
 ![](https://kimmy100b.github.io/assets/images/JSP/forward.png){: .align-center}
+
 1. 웹 브라우저에서 Servlet1에게 요청을 보냄
 2. Servlet1은 요청을 처리한 후, 그 결과를 HttpServletRequest에 저장
     - 일정한 부분까지만 Servlet1이 혼자 처리하고 나머지 부분을 다른 서블릿한테 넘김
@@ -66,6 +67,7 @@ date: 2020-09-15 T14:48:54-0:05:00
 - FrontServlet.java
     - java Resource > src 폴더 밑에 파일 생성(service만 오버라이드 해주기)
     - forword 주의사항 : 경로는 반드시 '/'로 시작, 같은 웹 애플리케이션 안에서만 가능
+
 ```java
 import java.io.IOException;
 
@@ -109,6 +111,7 @@ public class FrontServlet extends HttpServlet {
 ```
 
 - NextServlet.java
+
 ```java
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -160,21 +163,46 @@ public class ForwardServlet extends HttpServlet {
 }
 ```
 
-## 생각해보기
-### 질문
-Q. 서블릿은 프로그램 로직을 개발하기에 편리하지만, HTML 태그를 출력하기엔 불편합니다. JSP는 프로그램 로직을 개발하기는 좀 불편하지만, HTML 태그를 출력하기엔 편리합니다. 서블릿과 JSP는 서로 장단점이 반대입니다. 포워드를 이용해서 이러한 단점을 해결하고 싶습니다. 어떻게 해야 할까요?
 <br>
-A : 서블릿으로 프로그램 로직을 개발한 뒤 forward를 사용하여 출력할 때는 JSP로 넘기면 된다. NextServlet을 JSP로 변경해주면 된다.
 
-### 질문에 대한 소스코드
+# Forward와 Redirect의 차이
+
+| forward() 메서드 | sendRedirect() 메서드 | 
+|----|-----|
+| 서버 측에서 작동 | 클라이언트 측에서 작동 |
+| 동일한 요청 및 응답 객체를 다른 서블릿으로 보냄 | 항상 새 요청을 보냄 |
+| URL이 변경되지 않음 | URL이 변경됨 |
+| 서버 내에서만 작동 가능 | 서버 내부 및 외부에서 사용 가능 |
+| 예 : request.getRequestDispacher ( "servlet2"). forward (request, response); | 예 : response.sendRedirect ( "servlet2"); |
+
+<br>
+
+# servlet & jsp 연동
+- 서블릿은 로직을 구현하기에 알맞지만, HTML을 출력하기엔 불편
+- JSP는 로직을 구현하는 것은 불편하지만 HTML을 출력하기엔 편리
+- 프로그램 로직 수행은 Servlet에서, 결과 출력은 JSP에서 하는 것이 유리
+- Servlet과 JSP의 장단점을 해결하기 위해서 Servlet에서 프로그램 로직이 수행되고, 그 결과를 JSP에게 포워딩하는 방법을 사용(servlet & jsp 연동)
+
+![](https://kimmy100b.github.io/assets/images/JSP/servlet_jsp.png){: .align-center}
+
+## 예제 소스코드
 - FrontServlet.java
-    - 한부분만 변경
+    - service 함수부분만 변경
+
 ```java
-RequestDispatcher requestDispatehcer = request.getRequestDispatcher("/Next.jsp");
+protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	int diceValue = (int) (Math.random() * 6) + 1;
+	int ramValue = (int) (Math.random() * 10) + 1;
+	request.setAttribute("dice", diceValue);
+	request.setAttribute("ram", ramValue);
+	RequestDispatcher requestDispatehcer = request.getRequestDispatcher("/Next.jsp");
+	requestDispatehcer.forward(request, response);
+}
 ```
 
 - Next.jsp
     - WebContent 폴더 안에 만듦
+
 ```jsp
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
@@ -189,6 +217,7 @@ RequestDispatcher requestDispatehcer = request.getRequestDispatcher("/Next.jsp")
 		int dice = (Integer) request.getAttribute("dice");
 	%>
 	<p> dice : <%=dice%></p>
+	<p> EL 표기법 : ${ram} </p>
 	<%
 		for (int i = 0; i < dice; i++) {
 	%>
@@ -200,17 +229,7 @@ RequestDispatcher requestDispatehcer = request.getRequestDispatcher("/Next.jsp")
 </html>
 ```
 
-<br/>
-
-# Forward와 Redirect의 차이
-
-| forward() 메서드 | sendRedirect() 메서드 | 
-|----|-----|
-| 서버 측에서 작동 | 클라이언트 측에서 작동 |
-| 동일한 요청 및 응답 객체를 다른 서블릿으로 보냄 | 항상 새 요청을 보냄 |
-| URL이 변경되지 않음 | URL이 변경됨 |
-| 서버 내에서만 작동 가능 | 서버 내부 및 외부에서 사용 가능 |
-| 예 : request.getRequestDispacher ( "servlet2"). forward (request, response); | 예 : response.sendRedirect ( "servlet2"); |
+* EL표기법을 사용하는 이유 : JSP에서는 자바코드를 줄이는 것이 좋기 때문에, EL표기법을 사용하면 다른 거 아무것도 없이 ${ }로 출력 가능
 
 <br/>
 
