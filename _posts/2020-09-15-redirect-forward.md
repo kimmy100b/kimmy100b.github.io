@@ -233,6 +233,13 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 
 <br/>
 
+## 하나의 서블릿이 여러 개의 요청을 받는 방법
+- 와일드카드('*'기호)를 사용하기
+- [URL Patterns](https://docs.roguewave.com/hydraexpress/3.5.0/html/rwsfservletug/4-3.html)
+
+
+<br/>
+
 # 참고
 - [HTTP 상태코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
 - [forward와 redirect의 차이](https://www.javatpoint.com/sendRedirect()-method)
