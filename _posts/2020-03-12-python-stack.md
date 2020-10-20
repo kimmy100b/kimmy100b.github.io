@@ -56,5 +56,5 @@ date: 2020-03-12T17:27:00-0:05:00
 
 리스트 변수로 스택을 다루는 pop, push 기능 구현해보기<br/>
 (pop, push 함수 사용하지 않고 직접 구현해보기)
-![](https://kimmy100b.github.io/assets/images/python/basic/stack04.jpg){: .align-center}<br/>
+![](https://kimmy100b.github.io/assets/images/python/basic/stack03.jpg){: .align-center}<br/>
 ​
