@@ -2,13 +2,13 @@
 layout: post
 title: '백준알고리즘 2단계 if문_java'
 categories:
-    - algorithm
+    - Algorithm
 excerpt: ' '
 comments: true
 share: true
 tags:
     - java
-    - algorithm
+    - Algorithm
     - baekjoon
 date: 2020-01-08T16:15:00-0:05:00
 ---

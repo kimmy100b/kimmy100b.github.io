@@ -2,12 +2,12 @@
 layout: post
 title: "NAVER TECH CONCERT(2020.08.20)"
 categories:
-    - conference
+    - Conference
 excerpt: " "
 comments: true
 share: true
 tags:
-    - conference
+    - Conference
     - NAVER TECH CONCERT
 date: 2020-08-20T13:08:00-0:10:00
 ---

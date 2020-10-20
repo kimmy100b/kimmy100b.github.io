@@ -2,13 +2,13 @@
 layout: post
 title: "[프로그래머스] K번째 수 _ java"
 categories:
-  - algorithm
+  - Algorithm
 excerpt: " "
 comments: true
 share: true
 tags:
   - java
-  - algorithm
+  - Algorithm
   - programmers
   - sort
 date: 2020-08-13 T13:19:00-0:05:00

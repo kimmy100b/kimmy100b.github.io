@@ -2,12 +2,12 @@
 layout: post
 title: '제어 대상을 찾기 - getElementsByClassName'
 categories:
-    - javascript
+    - Javascript
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - javascript
+    - Javascript
     - getElementsByClassName
 date: 2020-03-22T11:00:00-0:05:00
 ---

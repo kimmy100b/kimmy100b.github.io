@@ -2,7 +2,7 @@
 layout: post
 title: "[프로그래머스] 있었는데요 없었습니다"
 categories:
-  - algorithm
+  - Algorithm
 excerpt: " "
 comments: true
 share: true

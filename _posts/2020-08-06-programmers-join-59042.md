@@ -2,7 +2,7 @@
 layout: post
 title: "[프로그래머스] 없어진 기록 찾기"
 categories:
-  - algorithm
+  - Algorithm
 excerpt: " "
 comments: true
 share: true

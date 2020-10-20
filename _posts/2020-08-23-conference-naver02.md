@@ -2,12 +2,12 @@
 layout: post
 title: "[NAVER TECH CONCERT] 상반기 네이버 인턴을 돌아보며"
 categories:
-    - conference
+    - Conference
 excerpt: " "
 comments: true
 share: true
 tags:
-    - conference
+    - Conference
     - NAVER TECH CONCERT
 date: 2020-08-23T00:08:00-0:10:00
 ---

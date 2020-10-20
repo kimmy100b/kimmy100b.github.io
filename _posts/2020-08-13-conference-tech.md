@@ -2,12 +2,12 @@
 layout: post
 title: "[7월 우아한테크세미나] 주니어 개발자로 성장하는 우아한 방법들"
 categories:
-    - conference
+    - Conference
 excerpt: " "
 comments: true
 share: true
 tags:
-    - conference
+    - Conference
     - 우아한Tech
 date: 2020-08-13T16:08:00-0:10:00
 ---

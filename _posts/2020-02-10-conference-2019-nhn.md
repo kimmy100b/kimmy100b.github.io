@@ -2,15 +2,14 @@
 layout: post
 title: '2019 NHN Forward 경남/창원'
 categories:
-    - conference
+    - Conference
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - conference
+    - Conference
     - NHN2019
-    - NHNFORWARD창원
-    - NHNFORWARD경남
+    - NHNFORWARD경남/창원
 date: 2020-02-10T09:17:00-0:10:00
 ---
 

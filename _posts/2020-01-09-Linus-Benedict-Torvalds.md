@@ -2,13 +2,13 @@
 layout: post
 title: '리누스 토르발스(Linus Torvalds), 그는 누구인가?'
 categories:
-    - developer
+    - Developer
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - developer
-    - software engineer
+    - Developer
+    - Software Engineer
     - Linus Torvalds
 date: 2020-01-09T23:04:00-0:05:00
 ---

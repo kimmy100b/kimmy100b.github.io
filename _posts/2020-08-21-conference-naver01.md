@@ -2,12 +2,12 @@
 layout: post
 title: "[NAVER TECH CONCERT] 빠르게 성장하는 슈퍼루키로 거듭나기"
 categories:
-    - conference
+    - Conference
 excerpt: " "
 comments: true
 share: true
 tags:
-    - conference
+    - Conference
     - NAVER TECH CONCERT
 date: 2020-08-21T19:08:00-0:10:00
 ---

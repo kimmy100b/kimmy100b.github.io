@@ -2,12 +2,12 @@
 layout: post
 title: 'SEF2020 알고보면 다른 개발자. 나는 어떤 개발자가 맞을까'
 categories:
-    - conference
+    - Conference
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - conference
+    - Conference
     - SEF2020
     - jcoding
 date: 2020-07-04T09:08:00-0:10:00

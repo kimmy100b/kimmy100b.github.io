@@ -2,11 +2,11 @@
 layout: post
 title: '제어 대상을 찾기 - querySelector, querySelectorAll'
 categories:
-    - javascript
+    - Javascript
 excerpt: ' '
 comments: true
 share: true
-    - javascript
+    - Javascript
     - querySelector
     - querySelectorAll
 date: 2020-03-31T13:00:00-0:05:00

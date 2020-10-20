@@ -2,12 +2,12 @@
 layout: post
 title: '제어 대상을 찾기 - getElementsById'
 categories:
-    - javascript
+    - Javascript
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - javascript
+    - Javascript
     - getElementsById
 date: 2020-03-22T15:00:00-0:05:00
 ---

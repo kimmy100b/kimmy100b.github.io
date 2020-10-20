@@ -2,13 +2,13 @@
 layout: post
 title: '백준알고리즘 4단계 while문_java'
 categories:
-    - algorithm
+    - Algorithm
 excerpt: ' '
 comments: true
 share: true
 tags:
     - java
-    - algorithm
+    - Algorithm
     - baekjoon
 date: 2020-01-09T15:30:00-0:05:00
 ---
