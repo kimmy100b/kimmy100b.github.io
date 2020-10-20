@@ -2,12 +2,12 @@
 layout: post
 title: 'Windows 10 Python 설치하기'
 categories:
-    - python
+    - Python
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - python
+    - Python
     - install
 date: 2020-03-09T23:30:00-0:05:00
 ---

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: '데이터구조 : 큐(Queue) - python'
+title: '데이터구조 : 큐(Queue) - Python'
 categories:
-    - python
+    - Python
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - python
-    - data structure
-    - stack
+    - Python
+    - Data Structure
+    - Stack
 date: 2020-03-11T13:00
 ---
 

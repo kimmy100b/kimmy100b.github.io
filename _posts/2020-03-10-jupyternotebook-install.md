@@ -2,7 +2,7 @@
 layout: post
 title: '주피터 노트북(Jupyter Notebook) 설치하기'
 categories:
-    - python
+    - Python
 excerpt: ' '
 comments: true
 share: true

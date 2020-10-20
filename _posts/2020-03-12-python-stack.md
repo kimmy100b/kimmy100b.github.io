@@ -1,15 +1,15 @@
 ---
 layout: post
-title: '데이터구조 : 스택(Stack) - python'
+title: '데이터구조 : 스택(Stack) - Python'
 categories:
-    - python
+    - Python
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - python
-    - data structure
-    - stack
+    - Python
+    - Data Structure
+    - Stack
 date: 2020-03-12T17:27:00-0:05:00
 ---
 
