@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'select 태그의 form 속성'
+title: 'Select 태그의 Form 속성'
 categories:
-    - html
+    - HTML&CSS
 excerpt: ' '
 comments: true
 share: true
 tags:
-    - html
-    - form
+    - HTML
+    - Form
     - select
 date: 2020-08-10 T16:34:00-0:05:00
 ---
