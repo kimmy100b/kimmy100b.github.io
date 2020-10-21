@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JAVA] ==과 equals의 차이점"
+title: "[JAVA] 문자열 비교하기 ==과 equals의 차이점"
 categories:
   - Java
 excerpt: " "
@@ -34,7 +34,7 @@ String b = new String("aaa");
 - String클래스의 equals 메소드 : 일반적인 타입이 아니라 클래스이다. 클래스는 기본적으로 Call by Reference형태로 생성 시 주소값이 부여된다.
 
 # 예제
-## `==`예제
+## == 예제
 ```java
 class Main {
   public static void main(String[] args) {
@@ -65,7 +65,7 @@ class Main {
 }
 ```
 
-## `equals` 예제
+## equals 예제
 ```java
 class Main {
   public static void main(String[] args) {
