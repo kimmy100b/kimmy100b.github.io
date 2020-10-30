@@ -56,7 +56,8 @@ public class TodayServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 ```
 
-doGet 메소드는 HttpServlet의 doGet 메소드를 오버라이드하여 재정의한 메소드 입니다. 따라서 오버라이드한 메소드들을 `@Override` 어노테이션을 붙여주는 것이 좋습니다. 이유는 해당 메소드가 오버라이드 된 메소드라는 것을 명시적으로 알 수 있으며, 컴파일 시 상속한 부모 클래스에 해당 메소드가 있는지 여부등을 통해 예외를 발생할 수 있어 오류를 인지할 수 있기 때문입니다. 자세한 내용을 아래 링크 참고 부탁드립니다. <https://onsil-thegreenhouse.github.io/programming/java/2017/12/20/java_tutorial_1-17/><br/><br/>
+doGet 메소드는 HttpServlet의 doGet 메소드를 오버라이드하여 재정의한 메소드 입니다. 따라서 오버라이드한 메소드들을 `@Override` 어노테이션을 붙여주는 것이 좋습니다. 이유는 해당 메소드가 오버라이드 된 메소드라는 것을 명시적으로 알 수 있으며, 컴파일 시 상속한 부모 클래스에 해당 메소드가 있는지 여부등을 통해 예외를 발생할 수 있어 오류를 인지할 수 있기 때문입니다. 자세한 내용을 아래 링크 참고 부탁드립니다.<br> 
+<https://onsil-thegreenhouse.github.io/programming/java/2017/12/20/java_tutorial_1-17/><br><br>
 
 # 비슷한 의미 변수
 
@@ -72,8 +73,9 @@ String nowString = now.format(dateTimeFormatter);
 String now = LocalDataTime.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd hh:mm"));
 ```
 
-<br/><br/>
+<br><br>
 
 # 이클립스 들여쓰기
 
-들여쓰기에 기준을 한가지로 통일하시는 것이 좋습니다. 이유는 다음과 같습니다. 현재 제가 사용하는 IDE의 tab 기준은 스페이스 4 크기로 설정되어 있습니다. 만일 회사의 코드 포멧 표준이 들여쓰기를 tab으로 해야되며 tab의 크기는 스페이스 2로되어 있다면 해당 코드의 들여쓰기는 들쭉날쭉할 것입니다.<br> 실무에서는 각 회사에 대한 코드 포멧 표준 가이드가 존재하며 이를 숙지하고 들여쓰기를 맞춰주는 것이 좋습니다. 이러한 코드 포멧을 맞춰주는 것을 IDE에서 제공해주며 아래 링크 참조 부탁드립니다. (실무에서는 IDE에서 제공하는 코드 스타일 포멧을 사용하거나 회사에서 제공하는 코드 포멧터로 설정합니다.) <https://m.blog.naver.com/PostView.nhn?blogId=samurae83&logNo=220405281014&proxyReferer=https%3A%2F%2Fwww.google.com%2F>
+들여쓰기에 기준을 한가지로 통일하시는 것이 좋습니다. 이유는 다음과 같습니다. 현재 제가 사용하는 IDE의 tab 기준은 스페이스 4 크기로 설정되어 있습니다. 만일 회사의 코드 포멧 표준이 들여쓰기를 tab으로 해야되며 tab의 크기는 스페이스 2로되어 있다면 해당 코드의 들여쓰기는 들쭉날쭉할 것입니다.<br> 실무에서는 각 회사에 대한 코드 포멧 표준 가이드가 존재하며 이를 숙지하고 들여쓰기를 맞춰주는 것이 좋습니다. 이러한 코드 포멧을 맞춰주는 것을 IDE에서 제공해주며 아래 링크 참조 부탁드립니다. (실무에서는 IDE에서 제공하는 코드 스타일 포멧을 사용하거나 회사에서 제공하는 코드 포멧터로 설정합니다.)<br>
+ <https://m.blog.naver.com/PostView.nhn?blogId=samurae83&logNo=220405281014&proxyReferer=https%3A%2F%2Fwww.google.com%2F>
