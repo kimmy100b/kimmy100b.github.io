@@ -12,7 +12,7 @@ tags:
 date: 2020-08-20T16:34:00-0:30:00
 ---
 
-> "나를 소개하는 페이지" 백엔드 코드 리뷰
+> "나를 소개하는 페이지" 프론트엔드 코드 리뷰
 
 클래스명으로 인해 fail당했다..
 ![](https://kimmy100b.github.io/assets/images/codereview/aboutme/FE/fail1.PNG){: .align-center}
