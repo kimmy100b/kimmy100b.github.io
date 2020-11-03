@@ -29,8 +29,6 @@ doPost메소드를 요청할 경우 doGet메소드로 넘어가게 작성하였�
 
 ![](https://kimmy100b.github.io/assets/images/codereview/todolist/BE/3.png){: .align-center}
 
-\* 어노테이션
-
 - 어노테이션을 선언하는 목적
   - 컴파일러에게 정보를 알려주기
   - 컴파일할 때와 설치 시의 작업을 지정하기
@@ -50,9 +48,9 @@ doPost메소드를 요청할 경우 doGet메소드로 넘어가게 작성하였�
 ![](https://kimmy100b.github.io/assets/images/codereview/todolist/BE/5.png){: .align-center}
 
 ```java
-  private static String dburl = "jdbc:mysql://localhost:3306/edwith?useSSL=false";
-  private static String dbUser = "root";
-  private static String dbpasswd = "mysql";
+  final private static String dburl = "jdbc:mysql://localhost:3306/edwith?useSSL=false";
+  final private static String dbUser = "root";
+  final private static String dbpasswd = "mysql";
 ```
 
 # 생성자에서 com.mysql.jdbc.Driver를 로딩
