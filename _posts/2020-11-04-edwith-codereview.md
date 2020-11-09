@@ -22,6 +22,8 @@ date: 2020-11-09T16:34:00-0:05:00
 ![](https://kimmy100b.github.io/assets/images/codereview/todolist/FE/3.jpg)
 ![](https://kimmy100b.github.io/assets/images/codereview/todolist/FE/5.jpg)
 
+글자 길이 제한 및 NULL 값 제한하기 위한 코드이지만 개발자도구를 열고 코드를 변경할 경우 보안에 취약해진다. 따라서 나는 TodoAddServlet.java를 지우고 writeAction.jsp를 추가해주었다. writeAction.jsp에서는 문자열 길이 제한과 NULL값 제한에 대해 걸어두었다.
+
 
 # HTML태그의 lang 속성 이용
 ![](https://kimmy100b.github.io/assets/images/codereview/todolist/FE/4.jpg)
