@@ -2,12 +2,12 @@
 layout: post
 title: "aboutme 코드리뷰 - BE(백엔드)"
 categories:
-    - Codereview
+    - CodeReview
 excerpt: " "
 comments: true
 share: true
 tags:
-    - Codereview
+    - CodeReview
     - aboutme
 date: 2020-08-18T09:34:00-0:05:00
 ---

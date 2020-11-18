@@ -2,12 +2,12 @@
 layout: post
 title: "aboutme 코드리뷰 1탄 - FE(프론트엔드)"
 categories:
-    - Codereview
+    - CodeReview
 excerpt: " "
 comments: true
 share: true
 tags:
-    - Codereview
+    - CodeReview
     - aboutme
 date: 2020-08-20T16:34:00-0:30:00
 ---
