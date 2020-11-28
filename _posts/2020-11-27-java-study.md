@@ -50,13 +50,61 @@ public static void main(String args[])
 Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at Rextester.main(source.java:17)
 ```
- 나누기 연산자를 사용할 때 조심하자.
+나누기 연산자를 사용할 때 조심하자.
 
 ## 나머지 연산(%)
 - 왼쪽의 피연산자를 오른쪽 피연자로 나누고 난 나머지 값을 결과로 반환하는 연산자
 
+예제)
+```java
+public static void main(String args[])
+{
+    int a = 20;
+    int b = 7;
+    
+    System.out.printf("몫 : %d / %d = %d\n", a, b, a/b);
+    System.out.printf("나머지 : %d %% %d = %d\n", a, b, a%b);
+}
+```
+
+실행결과)
+```java
+몫 : 20 / 7 = 2
+나머지 : 20 % 7 = 6
+```
+
+나머지 연산자는 나누는 수를 음수로도 계산할 수 있다. 피연산자의 부호를 무시하고, 나머지 연산을 한 결과에 왼쪽 피연산자의 부호를 붙이면 된다. 
+예제)
+```java
+public static void main(String args[])
+{
+    System.out.println(-10%8);
+    System.out.println(10%-8);
+    System.out.println(-10%-8);
+}
+```
+
+실행결과)
+```java
+-2
+2
+-2
+```
+
 # 비교 연산자
-- `<, >, <=, >=, ==, =!`
+| 비교연산자 | 연산결과 |
+|-----------|----------|
+| > | 좌변 값이 크면, true 아니면 false |
+| < | 좌변 값이 작으면, true 아니면 false |
+| >= | 좌변 값이 크거나 같으면, true 아니면 false |
+| <= | 좌변 값이 작거나 같으면, true 아니면 false |
+| == | 두 값이 같으면, true 아니면 false |
+| != | 두 값이 다르면, true 아니면 false |
+
+## 문자열의 비교
+두 문자열을 비교할 때는, 비교 연산자 `==` 대신 `equals()`라는 메서드를 사용해야한다. <br>
+`==`는 두 대상의 주소값을 비교하고 `equals`는 두 대상의 값 자체를 비교한다.<br><br>
+참고 내용 : <https://kimmy100b.github.io/java/2020/10/21/java-equals/>
 
 # 비트 연산자
 - `
