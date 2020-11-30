@@ -75,12 +75,14 @@ date: 2020-11-21T18:34:00-0:05:00
 ## 상수(Constant)
 - 상수가 필요한 이유 : 의미있는 이름을 붙여서 코드의 이해와 수정을 쉽게 만들기 위해서이다.
 - 사용방법 : 반드시 선언과 동시에 초기화, 변수의 타입 앞에 키워드 `final` 붙여주기
+- 주의 : 변경이 불가능하다.
 - 예제
 ```java
-final int WIDTH = 20; //폭
-final int HEIGTH = 10; //높이
+final int WIDTH = 20; // 폭
+final int HEIGTH = 10; // 높이
 
-int rectangleArea = (WIDTH * HEIGHT); //사각형 면적 구하는 공식
+int rectangleArea = (WIDTH * HEIGHT); // 사각형 면적 구하는 공식
+WIDTH = 30; // 에러. 상수에 새로운 값을 저장할 수 없다.
 ```
 
 ## 리터럴(Literal)
