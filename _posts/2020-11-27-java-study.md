@@ -285,3 +285,47 @@ final int MAX = 5; // 변수 앞에 키워rm드 final을 붙이면 상수가 된
 3. 단항 연산자의 대입 연산자를 제외한 모든 연산의 진행방향은 왼쪽에서 오른쪽이다.
 
 # Java 13. switch 연산자
+
+예제1) 요일의 글자 수를 인쇄
+```java
+public enum Day { SUNDAY, MONDAY, TUESDAY,
+    WEDNESDAY, THURSDAY, FRIDAY, SATURDAY; }
+
+// ...
+
+    int numLetters = 0;
+    Day day = Day.WEDNESDAY;
+    switch (day) {
+        case MONDAY:
+        case FRIDAY:
+        case SUNDAY:
+            numLetters = 6;
+            break;
+        case TUESDAY:
+            numLetters = 7;
+            break;
+        case THURSDAY:
+        case SATURDAY:
+            numLetters = 8;
+            break;
+        case WEDNESDAY:
+            numLetters = 9;
+            break;
+        default:
+            throw new IllegalStateException("Invalid day: " + day);
+    }
+    System.out.println(numLetters);
+```
+
+```java
+    Day day = Day.WEDNESDAY;    
+    System.out.println(
+        switch (day) {
+            case MONDAY, FRIDAY, SUNDAY -> 6;
+            case TUESDAY                -> 7;
+            case THURSDAY, SATURDAY     -> 8;
+            case WEDNESDAY              -> 9;
+            default -> throw new IllegalStateException("Invalid day: " + day);
+        }
+    );    
+```
