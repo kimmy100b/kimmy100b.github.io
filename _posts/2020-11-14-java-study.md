@@ -73,8 +73,7 @@ JVM은 크게 클래스 로더 시스템, 메모리, 실행 엔진 그리고 네
 6. 해석된 파일들은 Runtime Data Area(할당 메모리)에 배치되고 실질적 수행이 이루어짐
 
 ## Java 프로그램을 실행해보기(실습)
-1. Hello.java파일을 만들어준다.
-
+1) Hello.java파일을 만들어준다.
 ```java
 public class Hello{
     public static void main(String[] args){
@@ -83,7 +82,7 @@ public class Hello{
 }
 ```
 
-2. cmd창을 열어 Hello.java가 있는 폴더로 이동 
+2) cmd창을 열어 Hello.java가 있는 폴더로 이동 
 - 파일 확인
 
 ```
@@ -99,9 +98,8 @@ D:\workspace\java>dir
                2개 디렉터리  56,440,229,888 바이트 남음
 ```
 
-3. Hello.java를 **컴파일**해주기(javac는 컴파일러)
+3) Hello.java를 **컴파일**해주기(javac는 컴파일러)
 - 컴파일하고 나면 Hello.class가 생긴다.
-
 ```
 D:\workspace\java>javac Hello.java
 
@@ -118,19 +116,19 @@ D:\workspace\java>dir
                2개 디렉터리  56,440,229,888 바이트 남음
 ```
 
-4. Hello클래스를 **실행**시키기
+4) Hello클래스를 **실행**시키기
 ```
 D:\workspace\java>java Hello
 Hello World! 
 ```
 
 ## Java 버전에 따른 실행
-Q1 : Java 14버전으로 컴파일 된 파일을 Java 8버전으로 실행을 한다면 어떻게 될까?
+Q1 : Java 14버전으로 컴파일 된 파일을 Java 8버전으로 실행을 한다면 어떻게 될까?<br>
 A1 : 실행이 안된다. 상위 버전의 바이트코드는 하위 버전의 자바에서 실행할 수 없다.
-<br>
-Q2 : Java 8버전으로 컴파일 된 파일을 Java 14버전으로 실행을 한다면 어떻게 될까?
+<br><br>
+Q2 : Java 8버전으로 컴파일 된 파일을 Java 14버전으로 실행을 한다면 어떻게 될까?<br>
 A2 : 실행이 된다.
-<br>
+<br><br>
 그러면 상위 버전의 바이트코드는 하위 버전의 자바에서 실행을 전혀 할 수 없을까?<br>
 Java Compiler version option을 주게 될 경우 가능하다.<br>
 `C\:>javac -source 1.6 -target 1.6 -bootclasspath C:\jdk1.6.0\lib\rt.jar -extdirs "" OldCode.java` 이런 식으로
