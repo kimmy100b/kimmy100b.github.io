@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "연산자"
+title: "[Java] 연산자"
 categories:
   - Java
 excerpt: " "
