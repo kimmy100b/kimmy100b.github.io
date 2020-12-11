@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "자바 데이터 타입, 변수 그리고 배열"
+title: "[Java] 자바 데이터 타입, 변수 그리고 배열"
 categories:
   - Java
 excerpt: " "

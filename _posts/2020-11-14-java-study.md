@@ -82,8 +82,7 @@ public class Hello{
 }
 ```
 
-2) cmd창을 열어 Hello.java가 있는 폴더로 이동 
-- 파일 확인
+2) cmd창을 열어 Hello.java가 있는 폴더로 이동(파일 확인)
 
 ```
 D:\workspace\java>dir
@@ -98,8 +97,9 @@ D:\workspace\java>dir
                2개 디렉터리  56,440,229,888 바이트 남음
 ```
 
-3) Hello.java를 **컴파일**해주기(javac는 컴파일러)
-- 컴파일하고 나면 Hello.class가 생긴다.
+3) Hello.java를 **컴파일**해주기(javac는 컴파일러)<br>
+컴파일하고 나면 Hello.class가 생긴다.
+
 ```
 D:\workspace\java>javac Hello.java
 
@@ -117,6 +117,7 @@ D:\workspace\java>dir
 ```
 
 4) Hello클래스를 **실행**시키기
+
 ```
 D:\workspace\java>java Hello
 Hello World! 
