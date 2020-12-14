@@ -332,8 +332,6 @@ final int MAX = 5; // 변수 앞에 키워rm드 final을 붙이면 상수가 된
 
 # Java 13. switch 연산자
 
-예제1) 요일의 글자 수를 출력
-
 ```java
 public enum Day { SUNDAY, MONDAY, TUESDAY,
     WEDNESDAY, THURSDAY, FRIDAY, SATURDAY; }
