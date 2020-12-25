@@ -202,6 +202,8 @@ const test = (element) => element % 6 === 0;
 console.log(array.some(test)); // false : 하나도 통과하지 못했기 때문에
 ```
 
+참고. <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/some>
+
 ## every
 
 `every()` 메서드는 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트한다.
