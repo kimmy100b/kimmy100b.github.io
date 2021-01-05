@@ -373,7 +373,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: kimmy100b-github-io
   count: true
   # hide comments (visitors need to click to load the comments)
