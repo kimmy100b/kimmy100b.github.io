@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "redirect와 forward - BE"
+title: "redirect & forward - BE"
 categories:
   - JSP Servlet
 excerpt: " "
