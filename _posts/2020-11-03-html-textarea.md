@@ -2,12 +2,12 @@
 layout: post
 title: "[HTML] Textarea에 값 넣는 방법"
 categories:
-  - HTML&CSS
+  - HTML, CSS
 excerpt: " "
 comments: true
 share: true
 tags:
-  - HTML&CSS
+  - HTML, CSS
   - Textarea
 date: 2020-11-03T16:34:00-0:05:00
 ---
