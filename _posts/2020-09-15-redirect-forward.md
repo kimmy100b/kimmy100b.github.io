@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "redirect & forward - BE"
+title: "redirect와 forward - BE"
 categories:
   - JSP Servlet
 excerpt: " "
 comments: true
 share: true
 tags:
-  - redirect & forward
+  - redirect
   - forward
 date: 2020-09-15 T14:48:54-0:05:00
 ---
