@@ -7,7 +7,7 @@ excerpt: " "
 comments: true
 share: true
 tags:
-  - redirect
+  - redirect & forward
   - forward
 date: 2020-09-15 T14:48:54-0:05:00
 ---
