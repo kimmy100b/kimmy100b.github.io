@@ -2,7 +2,7 @@
 layout: post
 title: "Select 태그의 Form 속성"
 categories:
-  - HTML & CSS
+  - HTML, CSS
 excerpt: " "
 comments: true
 share: true
