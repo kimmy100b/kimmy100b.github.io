@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JavaScript] `<textarea>`태그 엔터값 줄 바꿈 처리하기"
+title: "[JavaScript] TextArea태그 엔터값 줄 바꿈 처리하기"
 categories:
   - Javascript
 excerpt: " "
