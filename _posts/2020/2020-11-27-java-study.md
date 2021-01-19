@@ -24,7 +24,7 @@ date: 2020-11-27T18:34:00-0:05:00
 
 ## 사칙 연산자
 
-- `+, -, *, / `
+- `+, -, *, /`
   예제)
 
 ```java
@@ -184,6 +184,9 @@ instanceof를 이용한 연산결과로 true를 얻었다는 것은 참조변수
 예제1)
 
 ```java
+class Car{}
+class FireEngine extends Car{}
+
 class Main {
   public static void main(String args[]){
     FireEngine fe = new FireEngine();
@@ -203,9 +206,6 @@ class Main {
     System.out.println(fe.getClass().getName()); //클래스의 이름을 출력
   }
 }// class
-
-class Car{}
-class FireEngine extends Car{}
 ```
 
 실행결과1)
@@ -221,6 +221,9 @@ FireEngine
 이번에는 FireEngine 대신 Car 클래스에 대한 instanceof연산자를 알아보자
 
 ```java
+class Car{}
+class FireEngine extends Car{}
+
 class Main {
   public static void main(String args[]){
     Car car = new Car();
@@ -238,9 +241,6 @@ class Main {
     }
   }
 }// class
-
-class Car{}
-class FireEngine extends Car{}
 ```
 
 실행결과2)
@@ -332,52 +332,124 @@ final int MAX = 5; // 변수 앞에 키워rm드 final을 붙이면 상수가 된
 
 # Java 13. switch 연산자
 
+홀수, 짝수를 swtich연산자를 사용한 간단한 예제이다.
+
 ```java
-public enum Day { SUNDAY, MONDAY, TUESDAY,
-    WEDNESDAY, THURSDAY, FRIDAY, SATURDAY; }
+public static void main(String args){
+  int num = 2;
 
-// ...
-
-    int numLetters = 0;
-    Day day = Day.WEDNESDAY;
-    switch (day) {
-        case MONDAY:
-        case FRIDAY:
-        case SUNDAY:
-            numLetters = 6;
-            break;
-        case TUESDAY:
-            numLetters = 7;
-            break;
-        case THURSDAY:
-        case SATURDAY:
-            numLetters = 8;
-            break;
-        case WEDNESDAY:
-            numLetters = 9;
-            break;
-        default:
-            throw new IllegalStateException("Invalid day: " + day);
-    }
-    System.out.println(numLetters);
+  switch(num){
+    case 1, 3, 5, 7, 9:
+      System.out.println("홀수입니다.");
+      break;
+    case 2, 4, 6, 8, 10:
+      System.out.println("짝수입니다.");
+      break;
+    default:
+      System.out.println("1-10까지의 수가 아닙니다.");
+      System.out.println("1-10까지의 수를 입력하세요.");
+      break;
+  }
+}
 ```
 
-위 코드처럼 복잡했던 코드를 ->연산자를 사용하여 아래 코드와 같이 가독성이 좋고 짧은 코드로 작성할 수 있게 되었다.
+위 예제에서 `System.out.println("홀수입니다.");`와 같이 해당 케이스에 동작하는 코드들을 메소드로 빼낸다고 생각하면 화살표 연산자를 이용해 아래 코드와 같이 표현할 수 있다. <br>
+한 메소드에 들어가야할 코드가 두 줄 이상이라면 `{}`로 감싸줘야한다.
 
 ```java
-    Day day = Day.WEDNESDAY;
-    System.out.println(
-        switch (day) {
-            case MONDAY, FRIDAY, SUNDAY -> 6;
-            case TUESDAY                -> 7;
-            case THURSDAY, SATURDAY     -> 8;
-            case WEDNESDAY              -> 9;
-            default -> throw new IllegalStateException("Invalid day: " + day);
-        }
-    );
+public static void main(String args){
+  int num = 2;
+
+  switch(num){
+    case 1, 3, 5, 7, 9 -> System.out.println("홀수입니다.");
+    case 2, 4, 6, 8, 10 -> System.out.println("짝수입니다.");
+    default -> {
+      System.out.println("1-10까지의 수가 아닙니다.");
+      System.out.println("1-10까지의 수를 입력하세요.");
+    }
+  }
+}
+```
+
+그러면 Switch연산자에서 나온 값을 대입할 수 있을까? 가능하다.
+
+```java
+public static void main(String args){
+  int month = 1;
+
+  String season = switch(month){
+    case 12, 1, 2 -> "겨울";
+    case 3, 4, 5 -> "봄";
+    case 6, 7, 8 -> "여름";
+    case 9, 10, 11 -> "가을";
+    default -> "지구온난화";
+  }
+  System.out.println("season");
+}
+```
+
+`break`를 사용하여 값을 대입할 수 있다.
+
+```java
+public static void main(String args){
+  int month = 1;
+
+  String season = switch(month){
+    case 12, 1, 2 : break "겨울";
+    case 3, 4, 5 : break "봄";
+    case 6, 7, 8 : break "여름";
+    case 9, 10, 11 : break "가을";
+    default : break "지구온난화";
+  }
+  System.out.println("season");
+}
+```
+
+그러나 `break`를 다른 곳에서도 너무 많이 사용함으로 `yield`를 사용할 수 있다.
+
+```java
+public static void main(String args){
+  int month = 1;
+
+  String season = switch(month){
+    case 12, 1, 2 : yield "겨울";
+    case 3, 4, 5 : yield "봄";
+    case 6, 7, 8 : yield "여름";
+    case 9, 10, 11 : yield "가을";
+    default : yield "지구온난화";
+  }
+  System.out.println("season");
+}
+```
+
+출력을 해준 다음 값을 대입시키고 싶다면 메소드로 표현하면 된다.<br>
+이때 주의해야할 점은 `:`과 `->`를 통일시켜야한다.
+
+```java
+public static void main(String args){
+  int month = 1;
+
+  String season = switch(month){
+    case 12, 1, 2 -> {
+      System.out.println("많이 추운 날씨입니다.");
+      yield "겨울";
+    }
+    case 3, 4, 5 -> yield "봄";
+    case 6, 7, 8 -> yield "여름";
+    case 9, 10, 11 -> yield "가을";
+    default -> {
+      System.out.println("잘못입력하였습니다.");
+      yield "지구온난화";
+    }
+  }
+  System.out.println("season");
+}
 ```
 
 # 참고
 
 - <https://github.com/whiteship/live-study/issues/3>
-- [Java 13. switch 연산자](https://docs.oracle.com/en/java/javase/13/language/switch-expressions.html)
+- 남궁 성, Java의 정석(3판), 도우출판
+- <https://docs.oracle.com/en/java/javase/13/language/switch-expressions.html>
+- <https://velog.io/@nunddu/Java-Switch-Expression-in-Java-14>
+- <https://www.youtube.com/watch?v=huLNOZ7bZ9E&list=PL2lVRutSfJd_84EoQ_4YrXDZFTZ-nfbxy&index=36>
