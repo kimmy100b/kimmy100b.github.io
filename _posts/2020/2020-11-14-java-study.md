@@ -17,63 +17,80 @@ date: 2020-11-14T16:34:00-0:05:00
 # JVM이란 무엇인가
 
 ## JVM(Java Virtual Machine)
+
 - 자바 가상 머신
 - 자바를 실행하기 위한 가상 기계
+- 컴파일된 class파일을 각각의 OS특성에서 동작할 수 있도록 해석하여 전달한다.
+  - 각 OS(윈도우, 리눅스, 맥 등)별로 JVM이 다르기 때문에 OS에 맞는 코드로 해석한다.
 - 자바로 작성된 애플리케이션은 실행되기 위해서는 반드시 JVM이 필요하다.
-- OS(윈도우, 리눅스, 맥 등)가 바뀌어도 그 코드 그대로 실행할 수 있도록 해준다.
 - 단점 : 속도가 느리다.
-    - 일반 애플리케이션의 코드는 OS만 거치고 하드웨어로 전달되는데 비해 Java애플리케이션의 JVM을 한 번 더 거치기 때문에
-    - 하드웨어에 맞게 완전히 컴파일된 상태가 아니고 실행 시에 해석되기 때문에
+  - 일반 애플리케이션의 코드는 OS만 거치고 하드웨어로 전달되는데 비해 Java애플리케이션의 JVM을 한 번 더 거치기 때문에
+  - 하드웨어에 맞게 완전히 컴파일된 상태가 아니고 실행 시에 해석되기 때문에
 - 장점 : "Write once, run anywhere.(한 번 작성하면 어디서든 실행된다.)"
 
 ## JVM 구성 요소
+
 JVM은 크게 클래스 로더 시스템, 메모리, 실행 엔진 그리고 네이티브 메서드로 나눠져 있다.
 
 1. Class Loader(클래스 로더)
+
 - 클래스 로더는 컴파일된 바이트코드들을 읽어 연결한 뒤 메모리에 저장하는 역할을 수행
 - 내부적으로는 로딩, 링크, 초기화의 단계가 존재
 - 클래스 로더 시스템 초기화 단계에서 전역 변수를 메모리에 할당하기 때문에 필요 이상으로 전역 변수를 남용할 경우 메모리 이슈를 겪을 수 있음
 
 2. Run-time Data Area(메모리)
+
 - 런타임 시 필요한 메모리 영역
 - 스택, 힙, PC레지스터, 메소드, 네이티브 메서드 스택이 있다.
 
 3. Execution Engine(실행엔진)
-- 클래스 로더에 의해 실행에 필요한 준비 과정이 완료되었다면 인터프리터나 JIT컴파일러를 통해 바이트코드를 번역하여 실행할 차례이다. 
+
+- 클래스 로더에 의해 실행에 필요한 준비 과정이 완료되었다면 인터프리터나 JIT컴파일러를 통해 바이트코드를 번역하여 실행할 차례이다.
 - 실행 엔진의 내부적으로는 인터프리터, JIT컴파일러, GC(Garbage Collection)가 있다.
 
 # JRE(Java Runtime Environment)
+
 - 자바실행환경
-- JVM +  클래스라이브러리(Java API)
+- JVM + 클래스라이브러리(Java API)
+- 자바로 개발된 class를 실행 및 운영
 - 자바로 작성된 응용프로그램이 실행되기 위한 최소 환경
 
 # JDK(Java Development Kit)
+
 - 자바개발도구
 - JRE + 개발에 필요한 실행파일(javac.exe 등)
+- 개발에 필요한 환경을 제공한다.
 - JDK를 설치하면 JVM(자바가상머신)과 자바클래스 라이브러리(Java API)외에 자바를 개발하는데 필요한 프로그램들이 설치된다.
 - JDK의 bin디렉토리에 있는 주요 실행 파일
   - javac.exe : 자바 컴파일러, 자바소스코드를 바이트코드로 컴파일한다.
   - java.exe : 자바 인터프리터, 컴파일러가 생성한 바이트코드를 해석하고 실행한다.
   - javap.exe : 역어셈블러, 컴파일된 클래스파일을 원래의 소스로 변환한다.
-  - javadoc.exe : 자동문서생성기, 소스파일에 있는 주석(/** */)을 이용하여 Java API문서와 같은 형식의 문서를 자동으로 생성한다.
+  - javadoc.exe : 자동문서생성기, 소스파일에 있는 주석(/\*\* \*/)을 이용하여 Java API문서와 같은 형식의 문서를 자동으로 생성한다.
   - jar.exe : 압축프로그램, 클래스파일과 프로그램의 실행에 관련된 파일을 하나의 jar파일(.jar)로 압축하거나 압축해지한다.
 
 # JRE와 JDK의 차이
+
 - 자바 언어로 프로그램을 개발하기 위해서는 JDK를 설치
 - 자바 언어로 작성된 프로그램을 실행하기 위해서는 JRE를 설치
+- 운영할 수 있는 환경인가? 개발에 필요한 환경인가?
+  - 운영이면 JRE, 개발이면 JDK가 필요하다.
 - JDK를 설치하면 JRE가 포함되어 같이 설치
 
 # 컴파일 및 실행하는 방법
+
 ## Java 프로그램의 실행방법
+
 1. 프로그램 실행
 2. JVM이 OS로 부터 메모리를 할당 받고, 용도에 따라 나누어 관리
-3. 자바 컴파일러(javac)가 소스 코드(*.java)를 읽어 바이트 코드로 변환(*.class)
-4. JVM의 Class Loader가 변환된 파일(*.class)들을 로드
+3. 자바 컴파일러(javac)가 소스 코드(_.java)를 읽어 바이트 코드로 변환(_.class)
+4. JVM의 Class Loader가 변환된 파일(\*.class)들을 로드
 5. Execution engine(실행 엔진) 은 로딩된 class 파일을 해석
 6. 해석된 파일들은 Runtime Data Area(할당 메모리)에 배치되고 실질적 수행이 이루어짐
 
 ## Java 프로그램을 실행해보기(실습)
-1) Hello.java파일을 만들어준다.
+
+1. Hello.java파일을 만들어준다.
+
 ```java
 public class Hello{
     public static void main(String[] args){
@@ -82,7 +99,7 @@ public class Hello{
 }
 ```
 
-2) cmd창을 열어 Hello.java가 있는 폴더로 이동(파일 확인)
+2. cmd창을 열어 Hello.java가 있는 폴더로 이동(파일 확인)
 
 ```
 D:\workspace\java>dir
@@ -97,8 +114,8 @@ D:\workspace\java>dir
                2개 디렉터리  56,440,229,888 바이트 남음
 ```
 
-3) Hello.java를 **컴파일**해주기(javac는 컴파일러)<br>
-컴파일하고 나면 Hello.class가 생긴다.
+3. Hello.java를 **컴파일**해주기(javac는 컴파일러)<br>
+   컴파일하고 나면 Hello.class가 생긴다.
 
 ```
 D:\workspace\java>javac Hello.java
@@ -116,14 +133,15 @@ D:\workspace\java>dir
                2개 디렉터리  56,440,229,888 바이트 남음
 ```
 
-4) Hello클래스를 **실행**시키기
+4. Hello클래스를 **실행**시키기
 
 ```
 D:\workspace\java>java Hello
-Hello World! 
+Hello World!
 ```
 
 ## Java 버전에 따른 실행
+
 Q1 : Java 14버전으로 컴파일 된 파일을 Java 8버전으로 실행을 한다면 어떻게 될까?<br>
 A1 : 실행이 안된다. 상위 버전의 바이트코드는 하위 버전의 자바에서 실행할 수 없다.
 <br><br>
@@ -135,7 +153,9 @@ Java Compiler version option을 주게 될 경우 가능하다.<br>
 `C\:>javac -source 1.6 -target 1.6 -bootclasspath C:\jdk1.6.0\lib\rt.jar -extdirs "" OldCode.java` 이런 식으로
 
 # Javac Option
+
 javac는 자바소스코드를 컴파일하여 바이트코드로 변환한다.
+
 - `-classpath 경로`
 - `-d 디렉토리`
 - `-encoding 인코딩명`
@@ -148,9 +168,11 @@ javac는 자바소스코드를 컴파일하여 바이트코드로 변환한다.
 - `-J 자바 옵션`
 
 # 바이트코드란 무엇인가
+
 바이트코드 : JVM이 이해할 수 있는 기계어. JVM은 바이트코드를 해당 OS의 기계어로 변환하여 OS로 전달함
 
 # JIT 컴파일러란 무엇이며 어떻게 동작하는지
+
 - JIT컴파일은 Just-In-Time Compilation의 약어이다.
 - JIT 컴파일러는 JRE 안에 존재한다.
 - 정적 컴파일 방식과 인터프리터가 합쳐진 방식
@@ -159,6 +181,8 @@ javac는 자바소스코드를 컴파일하여 바이트코드로 변환한다.
 - 장점 : 일반적인 인터프리터 언어에 비해 훨씬 좋은 성능을 낸다. 심지어 경우에 따라 정적 컴파일러 언어보다 좋은 성능을 낼 수도 있다.
 
 # 참고
+
 - [자바 스터디 1주차](https://github.com/whiteship/live-study/issues/1)
 - [Java Compile version option](https://stackoverflow.com/questions/15492948/javac-source-and-target-options)
 - [Javac Option](http://www.cs.yorku.ca/tech/other/java/docs/tooldocs/solaris/javac.html)
+- 박명철, 코드를 통해 본 빵형의 실전Java, 남기람북스
