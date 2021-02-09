@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Java] JVM은 무엇이며 자바 코드는 어떻게 실행하는 것인가"
+title: "[Java] JVM은 무엇이며 자바 코드는 어떻게 실행하는 것인가(수정중)"
 categories:
   - Java
 excerpt: " "

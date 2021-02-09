@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Java] 자바 변수, 상수, 리터럴"
+title: "[Java] 자바 변수, 상수, 리터럴(작성중)"
 categories:
   - Java
 excerpt: " "
