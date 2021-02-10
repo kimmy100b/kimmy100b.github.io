@@ -19,9 +19,7 @@ DBeaver 버전 : 7.3.0
 
 # 문제상황
 
-```
-public key retrieval is not allowed
-```
+> public key retrieval is not allowed
 
 ![](https://kimmy100b.github.io/assets/images/error/etc/1-1-1.PNG){: .align-center}
 
