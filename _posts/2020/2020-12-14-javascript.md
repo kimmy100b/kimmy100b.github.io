@@ -223,6 +223,6 @@ console.log(array1.every(isBelowThreshold)); // false : 39가 35 미만이 아�
 참고. <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/every>
 
 # 참고
-
+- [네이버 부스트코스](https://www.boostcourse.org/web316/lecture/16745/?isDesc=false)
 - [Javascript Array Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
 - [JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
