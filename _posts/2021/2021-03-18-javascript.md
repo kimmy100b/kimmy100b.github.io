@@ -81,13 +81,59 @@ kimmy
 */
 ```
 
-## 배열과의 차이
+# 직접 실습해보기
+
+## 실습 1
+**문제**<br>
+숫자 타입으로만 구성된 요소를 뽑아 배열을 만들어보세요.<br>
+[링크 바로가기](https://gist.github.com/crongro/ade2c3f74417fc202c8097214c965f27)<br>
+```javascript
+//실행결과
+["width", "height", "hOffset", "vOffset", "size", "hOffset", "vOffset"]
+```
+
+**솔루션**
+```javascript
+for(key in data){
+  if(typeof data[key] === "object"){
+    for(oKey in data[key]){
+      if(typeof data[key][oKey] === "number"){
+        console.log(oKey)
+      }
+    }
+  }
+}
+```
+
+## 실습 2
+**문제**<br>
+type이 sk인, name으로 구성된 배열만 출력하세요.<br>
+[링크 바로가기](https://gist.github.com/crongro/a9a118977f82780441db664d6785efe3)<br>
+```javascript
+//실행결과
+["Yong", "hary", "solvin", "hani", "chulsu"]
+```
+
+**솔루션**
+```javascript
+function find(data, array) {
+  data.forEach(obj => {
+    if(obj.type == "sk")
+      array.push(obj.name)
+    find(obj.childnode, array)
+  })
+}
+
+var array = []
+
+find(data, array)
+
+console.log(array)
+```
+
+# 배열과 객체의 차이
 - 배열 : 순서가 있는 리스트 / 탐색 : for문, foreach문
-- 객체 : 순서는 없지만 키값이 있는 어떤 이름
-키값이 이름이 있는 어떤 데이터를 보관할 때 많이 쓰임
-
-
-
+- 객체 : 순서가 없고 키 값이 있음 / 탐색 : for-in문
 
 # 참고
 - [네이버 부스트코스](https://www.boostcourse.org/web316/lecture/16746/?isDesc=false)
