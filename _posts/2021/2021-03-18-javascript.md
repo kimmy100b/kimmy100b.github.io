@@ -81,6 +81,24 @@ kimmy
 */
 ```
 
+## 객체의 추가 및 삭제
+```javascript
+const myFriend = { key : "value", key2 : "value" };
+console.log(myFriend);
+
+// 객체 속성 추가
+myFriend["name"] = "crong";
+console.log(myFriend["name"]);
+
+myFriend.age = 34;
+console.log(myFriend.age);
+
+// 객체 속성 삭제
+delete myFriend.key;
+delete myFriend["key2"];
+console.log(myFriend);
+```
+
 # 직접 실습해보기
 
 ## 실습 1
@@ -132,8 +150,8 @@ console.log(array)
 ```
 
 # 배열과 객체의 차이
-- 배열 : 순서가 있는 리스트 / 탐색 : for문, foreach문
-- 객체 : 순서가 없고 키 값이 있음 / 탐색 : for-in문
+배열 : 순서가 있는 리스트 / 탐색 -> for문, foreach문<br>
+객체 : 순서가 없고 키 값이 있음 / 탐색 -> for-in문
 
 # 참고
 - [네이버 부스트코스](https://www.boostcourse.org/web316/lecture/16746/?isDesc=false)
