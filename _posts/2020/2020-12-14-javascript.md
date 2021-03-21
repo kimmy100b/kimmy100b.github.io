@@ -18,7 +18,7 @@ date: 2020-12-24T20:30:00-0:05:00
 # 배열
 
 ## 배열의 선언
->💡 각각의 값인 요소(element)와 인덱스(index)로 참조되는 정렬된 값의 집합이다.
+각각의 값인 요소(element)와 인덱스(index)로 참조되는 정렬된 값의 집합이다.
 
 ```javascript
 var a = [];
@@ -52,7 +52,7 @@ console.log(a.length);
 
 ### indexOf
 
-> 💡 `indexOf()` 메서드는 호출한 String 객체에서 주어진 값과 일치하는 첫 번째 인덱스를 반환한다. 일치하는 값이 없으면 -1을 반환한다.
+`indexOf()` 메서드는 호출한 String 객체에서 주어진 값과 일치하는 첫 번째 인덱스를 반환한다. 일치하는 값이 없으면 -1을 반환한다.<br>
 
 `str.indexOf(searchValue[, fromIndex])` <br>
 
@@ -69,7 +69,7 @@ console.log(a.length);
 
 ### join
 
-> 💡 `join()` 메서드는 배열의 모든 요소를 연결해 하나의 문자열로 만든다.
+`join()` 메서드는 배열의 모든 요소를 연결해 하나의 문자열로 만든다.<br>
 
 `arr.join([separator])` <br>
 
@@ -95,7 +95,7 @@ var myVar4 = a.join(""); // myVar4에 '바람비불'을 대입
 
 ## concat
 
-> 💡 `concat()` 메서드는 인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열을 반환한다.
+`concat()` 메서드는 인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열을 반환한다.<br>
 
 `array.concat([value1[, value2[, ...[, valueN]]]])` <br>
 
